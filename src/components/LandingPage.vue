@@ -91,6 +91,15 @@
             </div>
           </div>
         </div>
+
+        <div class="padding">
+          <toggle-button @change="toggleResult" 
+           :labels="{checked: 'Upper', unchecked: 'Pants'}"
+           :color="{checked: '#BE3D62', unchecked: '#00A388'}"
+           :width="70"
+          /> 
+        </div>
+
         <div class="style-hint">
           Choose a cloth OR
           <form id="upload-style"
@@ -240,6 +249,7 @@ export default {
 
   data() {
     return {
+      toggled: false,
       msg: "Welcome",
       personImages: [
         { id: "000074_0.jpg", src: require("@/assets/persons/000074_0.jpg") },
@@ -265,6 +275,35 @@ export default {
         { id: "002362_1.jpg", src: require("@/assets/cloths/002362_1.jpg") },
         { id: "011615_1.jpg", src: require("@/assets/cloths/011615_1.jpg") },
         { id: "011798_1.jpg", src: require("@/assets/cloths/011798_1.jpg") },
+      ],
+      clothes: [
+        { id: "000048_1.jpg", src: require("@/assets/cloths/000048_1.jpg") },
+        { id: "000228_1.jpg", src: require("@/assets/cloths/000228_1.jpg") },
+        { id: "003434_1.jpg", src: require("@/assets/cloths/003434_1.jpg") },
+        { id: "004462_1.jpg", src: require("@/assets/cloths/004462_1.jpg") },
+        { id: "007345_1.jpg", src: require("@/assets/cloths/007345_1.jpg") },
+        { id: "003414_1.jpg", src: require("@/assets/cloths/003414_1.jpg") },
+        { id: "008570_1.jpg", src: require("@/assets/cloths/008570_1.jpg") },
+        { id: "014159_1.jpg", src: require("@/assets/cloths/014159_1.jpg") },
+        { id: "000118_1.jpg", src: require("@/assets/cloths/000118_1.jpg") },
+        { id: "002362_1.jpg", src: require("@/assets/cloths/002362_1.jpg") },
+        { id: "011615_1.jpg", src: require("@/assets/cloths/011615_1.jpg") },
+        { id: "011798_1.jpg", src: require("@/assets/cloths/011798_1.jpg") },
+      ],
+
+      pants: [
+        { id: "q1.jpg", src: require("@/assets/pants/q1.jpg") },
+        { id: "q2.jpg", src: require("@/assets/pants/q2.jpg") },
+        { id: "q3.jpg", src: require("@/assets/pants/q3.jpg") },
+        { id: "q4.jpg", src: require("@/assets/pants/q4.jpg") },
+        { id: "q5.jpg", src: require("@/assets/pants/q5.jpg") },
+        { id: "q6.jpg", src: require("@/assets/pants/q6.jpg") },
+        { id: "q7.jpg", src: require("@/assets/pants/q7.jpg") },
+        { id: "q8.jpg", src: require("@/assets/pants/q8.jpg") },
+        { id: "q9.jpg", src: require("@/assets/pants/q9.jpg") },
+        { id: "q10.jpg", src: require("@/assets/pants/q10.jpg") },
+        { id: "q11.jpg", src: require("@/assets/pants/q11.jpg") },
+        { id: "q12.jpg", src: require("@/assets/pants/q12.jpg") },
       ],
 
       dataUri: null,
@@ -368,27 +407,41 @@ export default {
 
       this.modalContent = "Waiting for a few seconds...";
       this.showWaitModal = true;
-
-      axiosVirtualFit({
-        url: "/virtual_fitting",
-        method: "POST",
-        data: vfData,
-        headers: {
-          "Content-Type": "multipart/form-data"
-        }
-      })
-      .then(response => {
-        this.showWaitModal = false;
-        this.resultSrc = response.data;
-      });
+      if (!this.toggled) {
+        axiosVirtualFit({
+          url: "/virtual_fitting",
+          method: "POST",
+          data: vfData,
+          headers: {
+            "Content-Type": "multipart/form-data"
+          }
+        })
+        .then(response => {
+          this.showWaitModal = false;
+          this.resultSrc = response.data;
+        });
+      } else {
+        axiosVirtualFit({
+          url: "/virtual_fitting_bottom",
+          method: "POST",
+          data: vfData,
+          headers: {
+            "Content-Type": "multipart/form-data"
+          }
+        })
+        .then(response => {
+          this.showWaitModal = false;
+          this.resultSrc = response.data;
+        });
+      }
     },
 
     toggleResult() {
-      this.showStyle = !this.showStyle;
-      if (this.showStyle) {
-        this.resultSrc = this.resultStyle;
+      this.toggled = !this.toggled;
+      if (!this.toggled) {
+        this.clothImages = this.clothes;
       } else {
-        this.resultSrc = this.resultPix;
+        this.clothImages = this.pants;
       }
     },
     async onCapture() {
