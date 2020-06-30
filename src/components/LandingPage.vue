@@ -262,6 +262,28 @@ export default {
         { id: "005328_0.jpg", src: require("@/assets/persons/005328_0.jpg") },
         { id: "006512_0.jpg", src: require("@/assets/persons/006512_0.jpg") },
       ],
+      p1: [
+        { id: "000074_0.jpg", src: require("@/assets/persons/000074_0.jpg") },
+        { id: "000174_0.jpg", src: require("@/assets/persons/000174_0.jpg") },
+        { id: "000651_0.jpg", src: require("@/assets/persons/000651_0.jpg") },
+        { id: "002533_0.jpg", src: require("@/assets/persons/002533_0.jpg") },
+        { id: "002769_0.jpg", src: require("@/assets/persons/002769_0.jpg") },
+        { id: "003600_0.jpg", src: require("@/assets/persons/003600_0.jpg") },
+        { id: "005120_0.jpg", src: require("@/assets/persons/005120_0.jpg") },
+        { id: "005328_0.jpg", src: require("@/assets/persons/005328_0.jpg") },
+        { id: "006512_0.jpg", src: require("@/assets/persons/006512_0.jpg") },
+      ],
+      p2: [
+        { id: "1.jpg", src: require("@/assets/p_persons/1.jpg") },
+        { id: "2.jpg", src: require("@/assets/p_persons/2.jpg") },
+        { id: "3.jpg", src: require("@/assets/p_persons/3.jpg") },
+        { id: "4.jpg", src: require("@/assets/p_persons/4.jpg") },
+        { id: "5.jpg", src: require("@/assets/p_persons/5.jpg") },
+        { id: "6.jpg", src: require("@/assets/p_persons/6.jpg") },
+        { id: "7.jpg", src: require("@/assets/p_persons/7.jpg") },
+        { id: "8.jpg", src: require("@/assets/p_persons/8.jpg") },
+        { id: "9.jpg", src: require("@/assets/p_persons/9.jpg") },
+      ],
       clothImages: [
         { id: "000048_1.jpg", src: require("@/assets/cloths/000048_1.jpg") },
         { id: "000228_1.jpg", src: require("@/assets/cloths/000228_1.jpg") },
@@ -439,8 +461,10 @@ export default {
     toggleResult() {
       this.toggled = !this.toggled;
       if (!this.toggled) {
+        this.personImages = this.p1;
         this.clothImages = this.clothes;
       } else {
+        this.personImages = this.p2;
         this.clothImages = this.pants;
       }
     },
