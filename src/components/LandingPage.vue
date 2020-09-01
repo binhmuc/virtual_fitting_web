@@ -183,7 +183,7 @@ Vue.use(VueSwal);
 Vue.use(ToggleButton);
 
 // const axiosVirtualFit = axios.create({ baseURL: "https://192.245.249.149:5002/" });
-const axiosVirtualFit = axios.create({ baseURL: "https://erclab.zapto.org/api/" });
+const axiosVirtualFit = axios.create({ baseURL: "https://35.200.55.29/api/" });
 
 const type = {
   "000048_1.jpg": "short",
