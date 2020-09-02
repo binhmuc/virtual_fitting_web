@@ -251,142 +251,12 @@ export default {
     return {
       toggled: false,
       msg: "Welcome",
-      personImages: [
-       { id: "1.jpg", src: require("@/assets/persons/1.jpg") },
-        { id: "2.jpg", src: require("@/assets/persons/2.jpg") },
-        { id: "3.jpg", src: require("@/assets/persons/3.jpg") },
-        { id: "4.jpg", src: require("@/assets/persons/4.jpg") },
-        { id: "5.jpg", src: require("@/assets/persons/5.jpg") },
-        { id: "6.jpg", src: require("@/assets/persons/6.jpg") },
-        { id: "7.jpg", src: require("@/assets/persons/7.jpg") },
-        { id: "8.jpg", src: require("@/assets/persons/8.jpg") },
-        { id: "9.jpg", src: require("@/assets/persons/9.jpg") },
-        { id: "10.jpg", src: require("@/assets/persons/10.jpg") },
-        { id: "11.jpg", src: require("@/assets/persons/11.jpg") },
-        { id: "12.jpg", src: require("@/assets/persons/12.jpg") },
-        { id: "13.jpg", src: require("@/assets/persons/13.jpg") },
-        { id: "14.jpg", src: require("@/assets/persons/14.jpg") },
-        { id: "15.jpg", src: require("@/assets/persons/15.jpg") },
-         { id: "16.jpg", src: require("@/assets/persons/16.jpg") },
-        { id: "17.jpg", src: require("@/assets/persons/17.jpg") },
-        { id: "18.jpg", src: require("@/assets/persons/18.jpg") },
-        { id: "19.jpg", src: require("@/assets/persons/19.jpg") },
-        { id: "20.jpg", src: require("@/assets/persons/20.jpg") },
-      ],
-      p1: [
-      { id: "1.jpg", src: require("@/assets/persons/1.jpg") },
-        { id: "2.jpg", src: require("@/assets/persons/2.jpg") },
-        { id: "3.jpg", src: require("@/assets/persons/3.jpg") },
-        { id: "4.jpg", src: require("@/assets/persons/4.jpg") },
-        { id: "5.jpg", src: require("@/assets/persons/5.jpg") },
-        { id: "6.jpg", src: require("@/assets/persons/6.jpg") },
-        { id: "7.jpg", src: require("@/assets/persons/7.jpg") },
-        { id: "8.jpg", src: require("@/assets/persons/8.jpg") },
-        { id: "9.jpg", src: require("@/assets/persons/9.jpg") },
-        { id: "10.jpg", src: require("@/assets/persons/10.jpg") },
-        { id: "11.jpg", src: require("@/assets/persons/11.jpg") },
-        { id: "12.jpg", src: require("@/assets/persons/12.jpg") },
-        { id: "13.jpg", src: require("@/assets/persons/13.jpg") },
-        { id: "14.jpg", src: require("@/assets/persons/14.jpg") },
-        { id: "15.jpg", src: require("@/assets/persons/15.jpg") },
-        { id: "16.jpg", src: require("@/assets/persons/16.jpg") },
-        { id: "17.jpg", src: require("@/assets/persons/17.jpg") },
-        { id: "18.jpg", src: require("@/assets/persons/18.jpg") },
-        { id: "19.jpg", src: require("@/assets/persons/19.jpg") },
-        { id: "20.jpg", src: require("@/assets/persons/20.jpg") },
-      ],
-      p2: [
-        { id: "1.jpg", src: require("@/assets/p_persons/1.jpg") },
-        { id: "2.jpg", src: require("@/assets/p_persons/2.jpg") },
-        { id: "3.jpg", src: require("@/assets/p_persons/3.jpg") },
-        { id: "4.jpg", src: require("@/assets/p_persons/4.jpg") },
-        { id: "5.jpg", src: require("@/assets/p_persons/5.jpg") },
-        { id: "6.jpg", src: require("@/assets/p_persons/6.jpg") },
-        { id: "7.jpg", src: require("@/assets/p_persons/7.jpg") },
-        { id: "8.jpg", src: require("@/assets/p_persons/8.jpg") },
-        { id: "9.jpg", src: require("@/assets/p_persons/9.jpg") },
-        { id: "10.jpg", src: require("@/assets/p_persons/10.jpg") },
-        { id: "11.jpg", src: require("@/assets/p_persons/11.jpg") },
-        { id: "12.jpg", src: require("@/assets/p_persons/12.jpg") },
-        { id: "13.jpg", src: require("@/assets/p_persons/13.jpg") },
-        { id: "14.jpg", src: require("@/assets/p_persons/14.jpg") },
-        { id: "15.jpg", src: require("@/assets/p_persons/15.jpg") },
-        { id: "16.jpg", src: require("@/assets/p_persons/16.jpg") },
-        { id: "17.jpg", src: require("@/assets/p_persons/17.jpg") },
-        { id: "18.jpg", src: require("@/assets/p_persons/18.jpg") },
-        { id: "19.jpg", src: require("@/assets/p_persons/19.jpg") },
-        { id: "20.jpg", src: require("@/assets/p_persons/20.jpg") },
-      ],
-      clothImages: [
-        { id: "1.jpg", src: require("@/assets/cloths/1.jpg") },
-        { id: "2.jpg", src: require("@/assets/cloths/2.jpg") },
-        { id: "3.jpg", src: require("@/assets/cloths/3.jpg") },
-        { id: "4.jpg", src: require("@/assets/cloths/4.jpg") },
-        { id: "5.jpg", src: require("@/assets/cloths/5.jpg") },
-        { id: "6.jpg", src: require("@/assets/cloths/6.jpg") },
-        { id: "7.jpg", src: require("@/assets/cloths/7.jpg") },
-        { id: "8.jpg", src: require("@/assets/cloths/8.jpg") },
-        { id: "9.jpg", src: require("@/assets/cloths/9.jpg") },
-        { id: "10.jpg", src: require("@/assets/cloths/10.jpg") },
-        { id: "11.jpg", src: require("@/assets/cloths/11.jpg") },
-        { id: "12.jpg", src: require("@/assets/cloths/12.jpg") },
-        { id: "13.jpg", src: require("@/assets/cloths/13.jpg") },
-        { id: "14.jpg", src: require("@/assets/cloths/14.jpg") },
-        { id: "15.jpg", src: require("@/assets/cloths/15.jpg") },
-        { id: "16.jpg", src: require("@/assets/cloths/16.jpg") },
-        { id: "17.jpg", src: require("@/assets/cloths/17.jpg") },
-        { id: "18.jpg", src: require("@/assets/cloths/18.jpg") },
-        { id: "19.jpg", src: require("@/assets/cloths/19.jpg") },
-        { id: "20.jpg", src: require("@/assets/cloths/20.jpg") },
-        { id: "21.jpg", src: require("@/assets/cloths/21.jpg") },
-      ],
-      clothes: [
-        { id: "1.jpg", src: require("@/assets/cloths/1.jpg") },
-        { id: "2.jpg", src: require("@/assets/cloths/2.jpg") },
-        { id: "3.jpg", src: require("@/assets/cloths/3.jpg") },
-        { id: "4.jpg", src: require("@/assets/cloths/4.jpg") },
-        { id: "5.jpg", src: require("@/assets/cloths/5.jpg") },
-        { id: "6.jpg", src: require("@/assets/cloths/6.jpg") },
-        { id: "7.jpg", src: require("@/assets/cloths/7.jpg") },
-        { id: "8.jpg", src: require("@/assets/cloths/8.jpg") },
-        { id: "9.jpg", src: require("@/assets/cloths/9.jpg") },
-        { id: "10.jpg", src: require("@/assets/cloths/10.jpg") },
-        { id: "11.jpg", src: require("@/assets/cloths/11.jpg") },
-        { id: "12.jpg", src: require("@/assets/cloths/12.jpg") },
-        { id: "13.jpg", src: require("@/assets/cloths/13.jpg") },
-        { id: "14.jpg", src: require("@/assets/cloths/14.jpg") },
-        { id: "15.jpg", src: require("@/assets/cloths/15.jpg") },
-        { id: "16.jpg", src: require("@/assets/cloths/16.jpg") },
-        { id: "17.jpg", src: require("@/assets/cloths/17.jpg") },
-        { id: "18.jpg", src: require("@/assets/cloths/18.jpg") },
-        { id: "19.jpg", src: require("@/assets/cloths/19.jpg") },
-        { id: "20.jpg", src: require("@/assets/cloths/20.jpg") },
-        { id: "21.jpg", src: require("@/assets/cloths/21.jpg") },
-      ],
-
-      pants: [
-       { id: "1.jpg", src: require("@/assets/pants/1.jpg") },
-        { id: "2.jpg", src: require("@/assets/pants/2.jpg") },
-        { id: "3.jpg", src: require("@/assets/pants/3.jpg") },
-        { id: "4.jpg", src: require("@/assets/pants/4.jpg") },
-        { id: "5.jpg", src: require("@/assets/pants/5.jpg") },
-        { id: "6.jpg", src: require("@/assets/pants/6.jpg") },
-        { id: "7.jpg", src: require("@/assets/pants/7.jpg") },
-        { id: "8.jpg", src: require("@/assets/pants/8.jpg") },
-        { id: "9.jpg", src: require("@/assets/pants/9.jpg") },
-        { id: "10.jpg", src: require("@/assets/pants/10.jpg") },
-        { id: "11.jpg", src: require("@/assets/pants/11.jpg") },
-        { id: "12.jpg", src: require("@/assets/pants/12.jpg") },
-        { id: "13.jpg", src: require("@/assets/pants/13.jpg") },
-        { id: "14.jpg", src: require("@/assets/pants/14.jpg") },
-        { id: "15.jpg", src: require("@/assets/pants/15.jpg") },
-        { id: "16.jpg", src: require("@/assets/pants/16.jpg") },
-        { id: "17.jpg", src: require("@/assets/pants/17.jpg") },
-        { id: "18.jpg", src: require("@/assets/pants/18.jpg") },
-        { id: "19.jpg", src: require("@/assets/pants/19.jpg") },
-        { id: "20.jpg", src: require("@/assets/pants/20.jpg") },
-        { id: "21.jpg", src: require("@/assets/pants/21.jpg") },
-      ],
+      personImages: [],
+      p1: [],
+      p2: [],
+      clothImages: [],
+      clothes: [],
+      pants: [],
 
       dataUri: null,
       resolution: (dectectMob())? { height: 720, width: 960 }: { height: 960, width: 720 },
@@ -442,6 +312,10 @@ export default {
   },
 
   mounted: function() {
+    this.importBot(require.context('../assets/bots/', true, /\.jpg$/));
+    this.importTop(require.context('../assets/tops/', true, /\.jpg$/));
+    this.importPersonTop(require.context('../assets/top_persons/', true, /\.jpg$/));
+    this.importPersonBot(require.context('../assets/bot_persons/', true, /\.jpg$/));
     this.selectedId = 1;
 
     let that = this;
@@ -465,6 +339,20 @@ export default {
   },
 
   methods: {
+    importPersonTop(r) {
+      r.keys().forEach(key => (this.personImages.push({ id: r(key), src: r(key) })));
+      r.keys().forEach(key => (this.p1.push({ id: r(key), src: r(key) })));
+    },
+    importPersonBot(r) {
+      r.keys().forEach(key => (this.p2.push({ id: r(key), src: r(key) })));
+    },
+    importTop(r) {
+      r.keys().forEach(key => (this.clothImages.push({ id: r(key), src: r(key) })));
+      r.keys().forEach(key => (this.clothes.push({ id: r(key), src: r(key) })));
+    },
+    importBot(r){
+      r.keys().forEach(key => (this.pants.push({ id: r(key), src: r(key) })));
+    },
     clearCanvas() {
       this.$refs.canvas.clearCanvas();
       this.userContent = false;

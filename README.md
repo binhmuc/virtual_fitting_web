@@ -29,6 +29,17 @@ Open your favorite browser at `http://localhost:8080`, the site is there.
 cd config.dev.env.js
 Change to BASE_API:'"https://35.200.55.29/api/"' by another host
 ```
+## Sample Data
+
+Go to "src/assets" and push image with format ".jpg" in each folder below:
+
+bot_persons: folder of human bottom try on
+
+top_persons: folder of human top try on
+
+bots: folder of human cloth bot try on
+
+tops: folder of human cloth bot try on
 
 ## Acknowledgments
 
