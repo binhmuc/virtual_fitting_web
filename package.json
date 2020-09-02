@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap": "^4.1.2",
+    "bootstrap": "^4.5.2",
     "v-viewer": "^1.0.1",
     "vue": "^2.6.10",
     "vue-js-toggle-button": "^1.2.3",
@@ -54,7 +54,8 @@
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^3.1.11",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
